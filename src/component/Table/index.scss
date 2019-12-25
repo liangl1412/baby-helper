@@ -1,0 +1,47 @@
+@import '../../styles/variable';
+.table-icon {
+  font-size: $font_size_3;
+  margin: 0 10px;
+  cursor: pointer;
+  color: inherit;
+  &.active {
+    color: $color_red
+  }
+}
+.table-loading-icon {
+  margin: 50px;
+}
+.ant-table-thead {
+  tr > th {
+    background: #E7E8EF;
+    .ant-table-header-column {
+      color: $color_font_title;
+      font-weight: bold;
+      font-size: $font_size_2;
+    }
+  }
+  
+}
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+  padding: 20px 30px;
+}
+// .ant-table-row-expand-icon-cell, .ant-table-expand-icon-th {
+//   display: none;
+// }
+.ant-table-row.odd {
+  background-color: #fff;
+}
+
+.ant-table-wrapper {
+  .ant-table-pagination {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .actionCol {
+    display: none;
+  }
+  .ant-table-body {
+    overflow: hidden;
+  }
+}

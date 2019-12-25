@@ -1,0 +1,65 @@
+@import '../../styles/variable';
+.dashboard {
+  .title {
+    padding-left: 20px;
+  }
+  .filter-section {
+    padding: 20px 20px 60px 20px;
+    background: #fff;
+    .filter-age {
+      .ant-slider {
+        padding: 10px 0;
+        margin: 0;
+        max-width: 80%;
+        .ant-slider-track {
+          background-color: $color_red
+        }
+        .ant-slider-handle {
+          border-color:none;
+          width: 20px;
+          height: 20px;
+          margin-top: -5px;
+        }
+        .ant-slider-rail, .ant-slider-track, .ant-slider-step {
+          height: 10px;
+        }
+      }
+    }
+    .ant-calendar-picker {
+      .ant-calendar-picker-input {
+        border: $border_1;
+      }
+      
+    }
+  }
+}
+.ant-tooltip-inner, .ant-tooltip-arrow {
+  background-color: $color_red !important;
+  border-color: $color_red !important;
+}
+.ant-tooltip {
+  z-index: 10;
+}
+
+.ant-calendar {
+  .ant-calendar-cell {
+    border: $border_1;
+    padding: 0;
+  }
+  .ant-calendar-in-range-cell::before {
+    top: 0;
+    bottom: 0;
+    background: #FFD5D7;
+  }
+  .ant-calendar-selected-day {
+    padding: 0;
+    
+  }
+  .ant-calendar-date {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+  }
+}

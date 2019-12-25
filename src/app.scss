@@ -1,0 +1,49 @@
+@import './styles/variable';
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body#caf {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: $color_light_grey;
+  font-family: 'Oxygen', sans-serif;
+  color: $color_font_p;
+}
+a {
+  text-decoration: none !important;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+  /* [type=button]{
+    -webkit-appearance: none !important;
+  } */
+
+.full-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+}
+.full-center {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+@import './styles/common';

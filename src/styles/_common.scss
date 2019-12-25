@@ -1,0 +1,55 @@
+@import './variable';
+
+#caf {
+    .primaryBox {
+        background: none;
+        color: $color_font_p;
+        transition: 1s all;
+        &:hover {
+            background: $color_red;
+            color: #fff;
+        }
+    }
+    .container {
+        margin: 30px auto;
+        min-height: 300px;
+        width: calc(100% - 50px);
+        border: $border_1;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        color: $color_font_title;
+        font-size: $font_size_3;
+        font-weight: bold;
+        line-height: 40px;
+        margin: 20px 0;
+    }
+    
+    h2 {
+        color: $color_font_title;
+        font-size: $font_size_2;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    ::placeholder {
+        color: $color_dark_grey;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #caf {
+        font-size: $font_size_0;
+        .container {
+            margin: 0;
+            width: 100%;
+            border: 0;
+        }
+        h1 {
+            font-size: $font_size_2
+        }
+        h2 {
+            font-size: $font_size_1
+        }
+    }
+}

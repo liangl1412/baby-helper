@@ -1,0 +1,26 @@
+# OS
+*.log
+**/*.log
+.DS_Store
+**/.DS_Store
+./idea
+
+# Dependencies
+**/node_modules
+
+# React App
+build
+.env
+
+# Firebase
+*.cache
+
+# Functions
+functions/etc
+functions/dist
+functions/.runtimeconfig.json
+
+# IDE
+*.code-workspace
+src/config.js
+functions/config.js
