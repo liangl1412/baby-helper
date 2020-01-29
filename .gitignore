@@ -11,6 +11,7 @@
 # React App
 build
 .env
+env
 
 # Firebase
 *.cache
