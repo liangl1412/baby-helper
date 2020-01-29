@@ -1,0 +1,33 @@
+@import '../styles/variable';
+.nav {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: $border_1;
+  padding: 15px 0;
+  width: 100%;
+  .ant-menu {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px !important;
+  }
+  .nav-item {
+    font-weight: bold;
+    border-bottom: none !important;
+    padding: 0;
+    &:not(.ant-menu-item-selected) > a {
+      color: inherit;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      i {
+        margin: 0;
+        font-size: 24px;
+      }
+    }
+  }
+}

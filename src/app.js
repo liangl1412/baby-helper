@@ -9,17 +9,21 @@ import {
 import './app.scss';
 import LoadingBar from './component/LoadingBar';
 import Nav from './component/Nav';
-import Dashboard from './views/Dashboard';
+import Header from './component/Header';
+import Home from './views/Home';
+import Activity from './views/Activity';
 import SignIn from './views/Auth';
 
 const PrivateRoute = ({ component: Component, authed, ...rest }) => {
+  console.log('test');
   return (
     <Route
       {...rest}
       render={props => (authed ?
         <>
-          <Nav {...props} />
+          <Header {...props} />
           <Component {...props} />
+          <Nav {...props} />
         </> :
         <Redirect to={{ pathname: '/signin', state: { from: props.location } }} />)}
         />
@@ -41,7 +45,8 @@ const App = (props) => {
     <BrowserRouter>
       <Switch>
         <Route path="/signin" component={SignIn} />
-        <PrivateRoute authed={auth.uid} path="/" component={Dashboard} />
+        <PrivateRoute authed={auth.uid} path="/activity" component={Activity} />
+        <PrivateRoute authed={auth.uid} path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   );

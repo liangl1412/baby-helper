@@ -45,7 +45,7 @@ export default (initialState = {}) => {
   // ======================================================
   const enhancers = [];
 
-  if (env === 'dev') {
+  if (env === 'prod') {
     const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__;
     if (typeof devToolsExtension === 'function') {
       enhancers.push(devToolsExtension());

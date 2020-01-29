@@ -5,12 +5,11 @@ html {
 }
 
 html,
-body#caf {
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   background-color: $color_light_grey;
-  font-family: 'Oxygen', sans-serif;
   color: $color_font_p;
 }
 a {

@@ -11,7 +11,9 @@
 # React App
 build
 .env
-env
+env/
+src/config.js
+
 
 # Firebase
 *.cache
@@ -23,5 +25,4 @@ functions/.runtimeconfig.json
 
 # IDE
 *.code-workspace
-src/config.js
 functions/config.js

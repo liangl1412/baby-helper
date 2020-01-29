@@ -1,0 +1,50 @@
+@import '../../styles/variable';
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .activity-card {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    background: $yellow;
+    margin-bottom: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 35%;
+    .activity-label {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      background-color: darken($yellow, 20%);
+      border-radius: 0 0 15px 15px;
+      line-height: 40px;
+      color: #fff;
+    }
+    &.feed {
+      background-color: $green;
+      background-image: url('../../images/icon/milk-bottle.png');
+      .activity-label {
+        background-color: darken($green, 20%);
+      }
+    }
+    &.diaper {
+      background-color: $red;
+      background-image: url('../../images/icon/diaper.png');
+      .activity-label {
+        background-color: darken($red, 20%);
+      }
+    }
+    &.sleep {
+      background-color: $blue;
+      background-image: url('../../images/icon/bed.png');
+      .activity-label {
+        background-color: darken($blue, 20%);
+      }
+    }
+
+  }
+}
